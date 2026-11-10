@@ -1,0 +1,19 @@
+[workspace]
+resolver = "2"
+members = ["airbag", "mock-signer", "integration-tests"]
+
+[workspace.package]
+edition = "2021"
+license = "MIT"
+
+[workspace.dependencies]
+near-sdk = "=5.29.1"
+
+[profile.release]
+codegen-units = 1
+opt-level = "z"
+lto = true
+debug = false
+panic = "abort"
+# Arithmetic overflow must panic instead of wrapping. Never remove.
+overflow-checks = true
