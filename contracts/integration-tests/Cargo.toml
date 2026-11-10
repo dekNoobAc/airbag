@@ -1,0 +1,15 @@
+[package]
+name = "integration-tests"
+description = "Sandbox tests: Airbag with a real NEP-141 USDC and a stand-in MPC signer"
+version = "0.1.0"
+edition.workspace = true
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+[dev-dependencies]
+near-workspaces = "=0.23.0"
+tokio = { version = "1", features = ["full"] }
+anyhow = "1"
+serde_json = "1"
