@@ -1,0 +1,27 @@
+{
+  "name": "airbag-web",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "sync": "node -e \"require('fs').copyFileSync('../testnet/deployment.json','src/data/deployment.json')\""
+  },
+  "dependencies": {
+    "@hot-labs/near-connect": "0.11.4",
+    "@tanstack/react-query": "5.100.10",
+    "near-api-js": "7.3.1",
+    "near-connect-hooks": "1.1.6",
+    "next": "16.2.6",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "typescript": "^5.9.3"
+  }
+}
