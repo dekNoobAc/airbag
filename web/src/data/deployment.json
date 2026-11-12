@@ -1,0 +1,205 @@
+{
+  "network": "testnet",
+  "root": "airbag-mw9otkyz.testnet",
+  "usdc": "usdc.airbag-mw9otkyz.testnet",
+  "airbag": "app.airbag-mw9otkyz.testnet",
+  "outlayer": "outlayer.testnet",
+  "mpc": "v1.signer-prod.testnet",
+  "usdc_ready": true,
+  "oracle_hash": "b756ccda7574d02da72bf6f603c79ff7bd31e8b7fe5f668b6174c507a11c3182",
+  "oracle_url": "https://test.fastfs.io/airbag-mw9otkyz.testnet/outlayer.testnet/b756ccda7574d02da72bf6f603c79ff7bd31e8b7fe5f668b6174c507a11c3182.wasm",
+  "proof": {
+    "oracle_upload": {
+      "label": "Oracle wasm stored on NEAR (FastFS)",
+      "tx": "CzYpuBPtrRcRsVVH1gZ6LwnR49URGBWN4m1Rgk9wboJq"
+    },
+    "deploy": {
+      "label": "Airbag contract deployed",
+      "tx": "7PTXEQXKZK1zrDBrA5LAyZHb3ZPMrUqyvRxZWXbrk9Yb"
+    },
+    "init": {
+      "label": "Airbag initialised: oracle pinned to the FastFS wasm (url + sha256)",
+      "tx": "9VEPm1R9rHMGsvgN6cdWvc43CYRStPxR6bSrukR6ryNu"
+    },
+    "market_usdc": {
+      "label": "Market 0 created: USDC depegs (below $0.98 for 24h) before Dec 31, 2026 (Polymarket usdc-depeg-by-december-31-968, pays on yes)",
+      "tx": "BCnftH1M41bA5feWFZvvftj6ToaRWpCndKk4ohnasMXR"
+    },
+    "market_btc74": {
+      "label": "Market 1 created: BTC crash cover: Bitcoin closes below $74,000 on Nov 12 (Polymarket bitcoin-above-74k-on-november-12-2026, pays on no)",
+      "tx": "GMMf8uqxrsyGqY4PX1a92vyimNddaW9K8GFwRFfmWgUE"
+    },
+    "market_btc70": {
+      "label": "Market 2 created: BTC crash cover: Bitcoin closes below $70,000 on Nov 13 (Polymarket bitcoin-above-70k-on-november-13-2026, pays on no)",
+      "tx": "BqvCYUPrmZEcVfDS2qTSt88C99tczsbvU11tQprnPzAh"
+    },
+    "oracle_refresh_1": {
+      "label": "OutLayer TEE run reads Polymarket, contract posts the floor for market 1: 3700 bps",
+      "tx": "34nCPueppRffoHSZ87mznATT5LDiwg4cyaTwwaqGWosR"
+    },
+    "oracle_refresh_0": {
+      "label": "OutLayer TEE run reads Polymarket, contract posts the floor for market 0: 200 bps",
+      "tx": "BbPd98PEYxoV4zJrn7Zm7rcBpqif8puuWYYrw6mDZ4Mg"
+    },
+    "oracle_refresh_2": {
+      "label": "OutLayer TEE run reads Polymarket, contract posts the floor for market 2: 701 bps",
+      "tx": "2XyEHy7VE6oe1JskHrnnk9tyvxHTa5o4mVZZ47MpLxFS"
+    },
+    "evm_chain": {
+      "label": "Base Sepolia registered; payout wallet 0x85e23ae7103502b421a5fb856c36def4f6bbb8cb = NEAR MPC key (app, \"airbag-float\")",
+      "tx": "DX3Ux1wNuKPxbqeCEi2PRz3tqLmGj4tLk2d6wDnqmBCu"
+    },
+    "lp_usdc": {
+      "label": "Underwriter adds 10000 USDC to market 0",
+      "tx": "7JwqEXQyVZwj1B6DTmWWKyCk68qMkia1ww4Pw1JBcN4u"
+    },
+    "lp_btc74": {
+      "label": "Underwriter adds 10000 USDC to market 1",
+      "tx": "7wbH6QLxTzgknXC3dp79W2yn9s5bAYLXH94x78S5XXg"
+    },
+    "lp_btc70": {
+      "label": "Underwriter adds 10000 USDC to market 2",
+      "tx": "4nirLfbtYNL9xFGu1jHAaYrfw7QgQnbzxYMXXfLJKJSu"
+    },
+    "buy_alice_btc74": {
+      "label": "alice buys 300 USDC of cover on market 1 for 113.45 USDC (paid on NEAR)",
+      "tx": "2yiyfzYHxry7oUP3JTZbfB5aaxPm3oC9monhXckrBaZY"
+    },
+    "buy_bob_btc74": {
+      "label": "bob buys 100 USDC of cover on market 1 for 38.42 USDC (paid on Base Sepolia)",
+      "tx": "9TpH5Mvk6hux3AVVxnrxUu1ssv6fQSj5dPugmAGy7RHH"
+    },
+    "buy_alice_btc70": {
+      "label": "alice buys 500 USDC of cover on market 2 for 36.94 USDC (paid on NEAR)",
+      "tx": "GkuYHCURAjxhsiNsCbHTug9i3V7qdCciTG3dpFXeUd64"
+    },
+    "buy_bob_usdc": {
+      "label": "bob buys 400 USDC of cover on market 0 for 8.40 USDC (paid on NEAR)",
+      "tx": "2DaP2ajpFFdHUNjbTqeuNHJ8a3gBs9G4YkqkaogD581t"
+    },
+    "bob_payout_near": {
+      "label": "bob switches policy 1 (100 USDC) to pay on NEAR",
+      "tx": "59UiRZNecA9twbCKhCpTyEuBeUpEnHwagKvsnpKrWbZs"
+    },
+    "buy_bob_btc74_base": {
+      "label": "bob buys 10 USDC of cover on market 1 for 3.86 USDC, paid on Base Sepolia",
+      "tx": "2JsGBu9cufPLrs22iwpP1hGd4kkP43WiUNMcMTyAynpZ"
+    },
+    "upgrade_pm": {
+      "label": "Airbag contract upgraded: Polymarket CTF hedging (state kept)",
+      "tx": "3dCEMuNVKqZJWAhh4wFB3EKkCU46Y6HxHtRPoC1BkaH8"
+    },
+    "pm_setup": {
+      "label": "Polymarket on Polygon Amoy configured: CTF + collateral, Airbag's MPC wallet",
+      "tx": "2iFYSf2coqqvnbqZNZpG9vhxAN3ec3bLTr1RHUuyBxpF"
+    },
+    "pm_link_0": {
+      "label": "Market 0 mirrored as a Polymarket CTF condition (cover so far: 400 USDC)",
+      "tx": "6kf3r57nXJDsAcTPUVDRy8PHVfjRtmacATwShAuCsSYy"
+    },
+    "pm_link_1": {
+      "label": "Market 1 mirrored as a Polymarket CTF condition (cover so far: 410 USDC)",
+      "tx": "9gkxggpsP3z9EojbFP7ofvrfXA9bkTz7u2vdyvzUxdG8"
+    },
+    "pm_link_2": {
+      "label": "Market 2 mirrored as a Polymarket CTF condition (cover so far: 500 USDC)",
+      "tx": "9ehxvJCopK6ErvB8VUP3cEYcabw78CPw1d8szu59sqKZ"
+    },
+    "pm_sign_0": {
+      "label": "NEAR MPC signs Polygon tx 0: approve",
+      "tx": "2kfkAJj3EKTQva1Z4tA95hFau7yCLzgr3WfM3zYG2JqB"
+    },
+    "pm_0": {
+      "label": "Polygon Amoy: Airbag's MPC wallet approves Polymarket's CTF to use its USDC",
+      "tx": "0x3a3fc518f8aadab5ae74ffb22a21539669062a3d0bcbe90cbabd8b27a9c745d1",
+      "chain": "amoy"
+    },
+    "upgrade_pm_unstick": {
+      "label": "Airbag contract upgraded: owner can reset a Polygon tx stuck in signing (state kept)",
+      "tx": "NoDzf4xRrdLjwbi9NoJ57Byo83AcPkjxRbjF9EgUbgg"
+    },
+    "pm_sign_1": {
+      "label": "NEAR MPC signs Polygon tx 1: mint",
+      "tx": "E6j9HYZx3N8Lr7VCxKGwTXXhqPDsFzKM2gLyhLUfr7i8"
+    },
+    "pm_sign_2": {
+      "label": "NEAR MPC signs Polygon tx 2: prepare_condition (market 0)",
+      "tx": "5T2P6qjZYqxCyEjuvM6cErdwaUx6PR5yrbeMQBooP8LS"
+    },
+    "pm_sign_3": {
+      "label": "NEAR MPC signs Polygon tx 3: split (market 0)",
+      "tx": "6wGmuXtzfsaiPix6VmXkP9jMhV172buyBGpVis93L7iE"
+    },
+    "pm_sign_4": {
+      "label": "NEAR MPC signs Polygon tx 4: prepare_condition (market 1)",
+      "tx": "HKpM8sZ3ey6ipnrvRYDTqBkFUzZH5eqtuK2dFVKEnSFU"
+    },
+    "pm_1": {
+      "label": "Polygon Amoy: Airbag's MPC wallet mints test USDC (testnet stand-in for bridged premiums)",
+      "tx": "0xbff419ee14e2cdd4a7642bc84615fdc61e3c284e66493a50c508f42860200879",
+      "chain": "amoy"
+    },
+    "pm_2": {
+      "label": "Polygon Amoy: Airbag's MPC wallet creates the market's YES/NO condition on Polymarket's CTF (market 0)",
+      "tx": "0x71f01b2f34cdcd2a8f008dfe91ed7d132d11d044c6caae2d5db6ee53bdb657bb",
+      "chain": "amoy"
+    },
+    "pm_3": {
+      "label": "Polygon Amoy: Airbag's MPC wallet splits USDC into real Polymarket YES + NO shares for the cover sold (market 0)",
+      "tx": "0xb82feb0cfe7797c64b7a829ae27b30b1272fc9282295fbda985075abe259eee7",
+      "chain": "amoy"
+    },
+    "pm_4": {
+      "label": "Polygon Amoy: Airbag's MPC wallet creates the market's YES/NO condition on Polymarket's CTF (market 1)",
+      "tx": "0x0a952806b9fe9abbe20d2eefd0637c01d2f3bae4b5b386cd108b8290280b2f59",
+      "chain": "amoy"
+    },
+    "pm_sign_5": {
+      "label": "NEAR MPC signs Polygon tx 5: split (market 1)",
+      "tx": "GQMZaYWSQhiLSekLQeLouHn4aMZqguhMSe3LAM1b2cQM"
+    },
+    "pm_sign_6": {
+      "label": "NEAR MPC signs Polygon tx 6: prepare_condition (market 2)",
+      "tx": "A2yABsMWQvTh5bMnVUw7nRGMNoiHeZzfX3dnoU3sKunV"
+    },
+    "pm_sign_7": {
+      "label": "NEAR MPC signs Polygon tx 7: split (market 2)",
+      "tx": "7WiVnL8fHo6X2iskn6dB3Y8mguYQEMhocDa2btjF64Mo"
+    },
+    "pm_5": {
+      "label": "Polygon Amoy: Airbag's MPC wallet splits USDC into real Polymarket YES + NO shares for the cover sold (market 1)",
+      "tx": "0x58052ce954732d66e3ff750da30f8743fd9c6497ab58d35ed55ac50871b4d959",
+      "chain": "amoy"
+    },
+    "pm_6": {
+      "label": "Polygon Amoy: Airbag's MPC wallet creates the market's YES/NO condition on Polymarket's CTF (market 2)",
+      "tx": "0xa8a7f852c6af507007bb864fcec4a7940e84306bfb2898b7f5acf0dec5996c4a",
+      "chain": "amoy"
+    },
+    "pm_7": {
+      "label": "Polygon Amoy: Airbag's MPC wallet splits USDC into real Polymarket YES + NO shares for the cover sold (market 2)",
+      "tx": "0xd137f0637c092b910d553bb9d9b47dbb6a138157f1890158e537395ec505005a",
+      "chain": "amoy"
+    }
+  },
+  "app_ready": true,
+  "oracle_pinned": "b756ccda7574d02da72bf6f603c79ff7bd31e8b7fe5f668b6174c507a11c3182",
+  "markets": {
+    "usdc": "0",
+    "btc74": "1",
+    "btc70": "2"
+  },
+  "float_address": "0x85e23ae7103502b421a5fb856c36def4f6bbb8cb",
+  "base_sepolia_usdc": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
+  "bob_evm": "0xa12a02997e7528efc962ab7239b8da58eaed41cd",
+  "funded": true,
+  "relayer_evm": "0x29623ba60826ebc8cd2384b3d2fbcb2da08d00a0",
+  "polymarket": {
+    "chain": "Polygon Amoy",
+    "chain_id": 80002,
+    "exchange": "0xdFE02Eb6733538f8Ea35D585af8DE5958AD99E40",
+    "ctf": "0x69308FB512518e39F9b16112fA8d994F4e2Bf8bB",
+    "collateral": "0x9c4E1703476E875070EE25b56A58B008CFb8FA78",
+    "wallet": "0x85e23ae7103502b421a5fb856c36def4f6bbb8cb"
+  }
+}
