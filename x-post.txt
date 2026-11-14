@@ -1,0 +1,44 @@
+X POST DRAFT: Airbag (NEAR Hackathon 2026)
+Required by the rules: the post must mention NEAR HACKATHON and include the video or screenshots.
+Attach: demo/airbag-crash-test.mp4 (24 MB, 2:12; fits X's 2:20 limit on a free account)
+
+==================================================
+OPTION A: single post (under 280 characters)
+==================================================
+
+Polymarket tells you a crash is 68% likely. It doesn't pay you when it happens.
+
+Airbag sells cover on the same events from a contract on @NEARProtocol, priced by Polymarket and backed 1:1 in USDC.
+
+Built for NEAR HACKATHON
+github.com/dekNoobAc/airbag
+
+==================================================
+OPTION B: thread (post 1 + the video, then replies)
+==================================================
+
+1/
+Polymarket gave Bitcoin a 68% chance of closing below $74k. Odds don't protect you, though.
+
+I built Airbag for NEAR HACKATHON: insurance on what Polymarket predicts. We crash-tested it live. 🧵
+
+2/
+Buy cover on an event, e.g. "pay me 100 USDC if BTC closes below $74k".
+
+An AMM on NEAR sets the price, and it's never cheaper than Polymarket's odds. Every policy is backed 1:1 in USDC by underwriters.
+
+3/
+The odds come from an oracle running in a TEE. The contract pins its code hash, so there's no oracle key to steal: only that exact code can answer.
+
+4/
+Like a hook on Polymarket: every policy is mirrored as real YES + NO shares on Polymarket's own contracts on Polygon.
+
+The NEAR contract builds those Polygon transactions itself, and NEAR's MPC network signs them. No private key exists anywhere.
+
+5/
+When Polymarket resolves, a dispute window runs, then every policy pays out automatically in USDC on NEAR or Base. No claim form.
+
+Live on NEAR testnet + Polygon Amoy, every transaction linked in the README:
+github.com/dekNoobAc/airbag
+
+#NEAR #Polymarket #DeFi

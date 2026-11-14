@@ -3,3 +3,11 @@ node_modules/
 .env*
 !.env.example
 .DS_Store
+testnet/keeper.log
+demo/node_modules/
+demo-video/
+.claude
+cm.sh
+*.log
+*.mp4
+.next

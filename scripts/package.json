@@ -1,0 +1,25 @@
+{
+  "name": "airbag-scripts",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "testnet:setup": "tsx src/setup.ts",
+    "testnet:refresh": "tsx src/refresh.ts",
+    "typecheck": "tsc --noEmit",
+    "testnet:activity": "tsx src/activity.ts",
+    "testnet:status": "tsx src/status.ts",
+    "testnet:keeper": "tsx src/keeper.ts",
+    "testnet:polymarket": "tsx src/pm-setup.ts"
+  },
+  "dependencies": {
+    "@noble/curves": "2.2.0",
+    "@noble/hashes": "2.2.0",
+    "near-api-js": "7.3.1",
+    "viem": "2.21.55"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}
